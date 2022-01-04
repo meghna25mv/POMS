@@ -28,7 +28,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run test"
+      "post-commit": "npm run test"
     }
   },
   "description": "Purchase Order Management System : Purchaser System"
