@@ -4,7 +4,7 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
-    "test:jest": "jest",
+    "test": "jest",
     "test:coverage": "jest --colors --coverage"
   },
   "author": "Meghna Verma",
@@ -28,7 +28,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run test:jest"
+      "pre-commit": "npm run test"
     }
   },
   "description": "Purchase Order Management System : Purchaser System"
