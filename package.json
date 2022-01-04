@@ -28,8 +28,15 @@
   },
   "husky": {
     "hooks": {
-      "post-commit": "echo \"[Husky] pre-commit\""
+      "pre-commit": "lint-staged",
+      "pre-push":"npm run test"
     }
+  },
+  "lint-staged":{
+    "*.{js,json,css,md,html}":[
+      "prettier --single-quote --write",
+      "git add"
+    ]
   },
   "description": "Purchase Order Management System : Purchaser System"
 }
